@@ -24,9 +24,7 @@ const port = process.env.PORT || 5000;
 //   next(createError(404));
 // });
 
-app.use("/",(req,res)=>{
-  res.send("API is running....")
-})
+app.use("/",userRoutes)
 
 dbConnection()
 // Start Server
